@@ -1,1 +1,4 @@
-# Estou aprendendo sobre como criar repositórios, sobre as funcionalidades do Git & GitHub
+# Estou aprendendo sobre html
+- tag lista não ordenada
+- tag referência interna e externa
+- colocar imagem na página
