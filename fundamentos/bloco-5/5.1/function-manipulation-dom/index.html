@@ -93,6 +93,25 @@
           }
         }
         chalangText();
+
+        // 6 resolução
+
+         function showTagsP() {
+           let showTags = document.getElementsByTagName('p');
+           for (let index = 0; index < showTags.length; index += 1) {
+             console.log(showTags[index]);
+           }
+          }
+         showTagsP();
+
+        //realmente o querySelectorAll e querySelector é mais específico e mais flexível pra selecionar o que eu quiser tags classes id do jeito que eu quiser
+        // function showTagsP() {
+        //   let showTags = document.querySelectorAll('.main-content .center-content p');
+        //   for (let index = 0; index < showTags.length; index += 1) {
+        //     console.log(showTags[index]);
+        //   }
+        // }
+        //showTagsP();
     </script>
   </body>
 </html>
