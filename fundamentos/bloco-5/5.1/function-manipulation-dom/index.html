@@ -56,33 +56,43 @@
         */
         // 1 - Resolução
         function trocaP() { 
-        let centerContext = document.getElementsByTagName('p')[1] 
-            centerContext.innerText = 'Eu me vejo como uma pessoa desenvolvedora contribuindo para um mundo melhor através do meu conhecimento';
+          let centerContext = document.getElementsByTagName('p')[1] 
+          centerContext.innerText = 'Eu me vejo como uma pessoa desenvolvedora contribuindo para um mundo melhor através do meu conhecimento';
         }
         trocaP ();
    
         // 2 - Resolução
         function mudaCor() {
-            let chalengColor = document.getElementsByClassName('main-content');
-            chalengColor[0].style.backgroundColor = 'rgb(76,164,109)'   
+          let chalengColor = document.getElementsByClassName('main-content');
+          chalengColor[0].style.backgroundColor = 'rgb(76,164,109)'   
         } 
         mudaCor();
 
         // 3 - Resolução
 
         function mudaCor2() {
-            let chalengColore = document.getElementsByClassName('center-content');
-            chalengColore[0].style.backgroundColor = 'white'   
+          let chalengColore = document.getElementsByClassName('center-content');
+          chalengColore[0].style.backgroundColor = 'white'   
         } 
         mudaCor2();
 
         // 4 - Resolução
 
         function corrijaText() {
-            let corrija = document.getElementsByClassName('title');
-            corrija[0].innerText = 'Exercício 5.1 - JavaScript'   
+          let corrija = document.getElementsByClassName('title');
+          corrija[0].innerText = 'Exercício 5.1 - JavaScript'   
         } 
         corrijaText();
+
+        // 5 resolução
+
+        function chalangText() {
+          let textTagP = document.getElementsByTagName('p');
+          for (index = 0; index < textTagP.length; index += 1) {
+            textTagP[index].style.textTransform = 'uppercase';
+          }
+        }
+        chalangText();
     </script>
   </body>
 </html>
