@@ -114,10 +114,46 @@
       }
 
     // exercício 9
-      
-      
 
-      
+      for (let index = 1; index <=3; index += 1) {
+      const tagFiMan = document.createElement('h3');
+      tagFiMan.innerHTML = 'show ' + index;
+      elementMain.appendChild(tagFiMan);
+      }
+
+    // vamos fazer alterações e remoções
+    // exercício 1
+
+      const h1Class = document.querySelector('h1')
+      h1Class.className = 'title';
+
+    // exercício 2
+    
+      const description = document.getElementsByTagName('h1');
+      for (let index = 1; index <=3; index += 1) {
+        description[index].className = 'description';
+      }
+
+    // exercício 3
+
+      const removeLeftContent = document.getElementsByClassName('left-content')[0];
+      elementMain.removeChild(removeLeftContent);
+    
+    // exercício 4
+
+      const centralizeSection = document.getElementsByClassName('right-content')[0];
+      centralizeSection.style.marginRight = 'auto';
+
+    // exercício 5
+
+      const trocaFundSection = document.getElementsByClassName('center-content')[0];
+      trocaFundSection.parentNode.style.backgroundColor = 'purple';
+
+    // exercício 6
+    
+      const ul = document.getElementsByTagName('ul')[0];
+      ul.lastChild.remove();
+      ul.lastChild.remove();
     </script>
   </body>
 </html>
