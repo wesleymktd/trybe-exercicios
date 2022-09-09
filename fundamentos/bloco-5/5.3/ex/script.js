@@ -270,8 +270,31 @@ colorDayTask();
 // Dica - Propriedade: key.
 
 function addTasks() {
-  let getfield = document.querySelector('#task-input');
+  let getField = document.querySelector('#task-input');
   let getButtons = document.querySelector('#btn-add');
+  let getList = document.querySelector('.task-list');
 
-  getfield.a
-} 
+  getButtons.addEventListener('click', function() {
+    if(getField.value.length > 0) {
+      let newLi = document.createElement('li');
+      newLi.innerText = getField.value;
+
+      getList.appendChild(newLi);
+      getField.value = '';
+    } else {
+      alert('Error: Digite ao menos 1 caractere')
+    }
+  });
+  
+  getField.addEventListener('keyup', function(event) {
+    if(getField.value.length > 0 && event.key === 'enter') {
+      let newLi = document.createElement('li');
+      newLi.innerText = getField.value;
+
+      getList.appendChild(newLi);
+      getField.value = '';
+    }
+  });
+}
+
+addTasks();
