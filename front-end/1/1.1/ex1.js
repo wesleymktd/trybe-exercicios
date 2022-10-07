@@ -36,4 +36,4 @@ const sendMarsTemperature = () => {
 }
 sendMarsTemperature(); // Imprime "A temperatura de Marte é: 20 graus celsius", por exemplo
 
-//-------------------------------
+//---------------------------gi----
