@@ -20,7 +20,7 @@
 //     .then((data) => console.log(data.value));
 // }
 
-// fetchJoke();
+// fetchJoke()
 //-----------------------------------------------
 //  agora adicionando o .catch() ao código que vai tratar se tivr erro
 // const fetch = require('node-fetch');
