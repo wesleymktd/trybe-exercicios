@@ -12,15 +12,15 @@
 // exemplo colocando a função fetch a gente trata a requisição para a mensagem chegar
 // const fetch = require('node-fetch');
 
-// const fetchJoke = () => {
-//   const url = 'https://api.chucknorris.io/jokes/random?category=dev';
+const fetchJoke = () => {
+  const url = 'https://api.chucknorris.io/jokes/random?category=dev';
 
-//   fetch(url)
-//     .then((response) => response.json())
-//     .then((data) => console.log(data.value));
-// }
+  fetch(url)
+    .then((response) => response.json())
+    .then((data) => console.log(data.value));
+}
 
-// fetchJoke()
+fetchJoke()
 //-----------------------------------------------
 //  agora adicionando o .catch() ao código que vai tratar se tivr erro
 // const fetch = require('node-fetch');
@@ -75,20 +75,20 @@
 
 // refatorando o than / catch pelo try/catch
 
-const fetch = require('node-fetch');
+// const fetch = require('node-fetch');
 
-const fetchJoke = async () => {
-  const url = 'https://api.chucknorris.io/jokes/random?category=dev';
+// const fetchJoke = async () => {
+//   const url = 'https://api.chucknorris.io/jokes/random?category=dev';
 
-  try {
-    const response = await fetch(url);
-    const data = await response.json();
-    console.log(data.value);
-  } catch(error) {
-    console.log(`Algo deu errado :( \n${error}`);
-  }
-}
+//   try {
+//     const response = await fetch(url);
+//     const data = await response.json();
+//     console.log(data.value);
+//   } catch(error) {
+//     console.log(`Algo deu errado :( \n${error}`);
+//   }
+// }
 
-fetchJoke();
+// fetchJoke();
 
 // Chuck Norris can write multi-threaded applications with a single thread.
