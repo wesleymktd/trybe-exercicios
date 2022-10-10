@@ -122,4 +122,15 @@ const uppercase = (str, callback) => {
   }, 500);
 };
 
-it
+// it('uppercase "test" to equal "TEST"', (done) => {
+//   uppercase('test', (stringUpper) => {
+//     try {
+//       expect(stringUpper).toBe('TEST');
+//       done();
+//     } catch (error) {
+//       done(error);
+//     }
+//   })
+// })
+
+module.exports = uppercase;
