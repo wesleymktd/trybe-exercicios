@@ -28,7 +28,7 @@ it('fetches a joke', async () => {
   );
 });
 
-it.only('ao renderizar a página é renderizada uma piada e a função fetch foi chamada 1 vez', async () => {
+it('ao renderizar a página é renderizada uma piada e a função fetch foi chamada 1 vez', async () => {
   // inicializando os mocks
   const joke1 = {
     id: '7h3oGtrOfxc',
@@ -41,6 +41,11 @@ it.only('ao renderizar a página é renderizada uma piada e a função fetch foi
     joke: 'What is red and smells like blue paint? Red paint!',
     status: 200,
   }
+
+  // jest.spyOn(global, 'fetch') // posso fazer assim que dá certo
+  // .mockResolvedValueOnce({ // mockResolvedValueOnce vai garantir que esse mock seje utilizado apenas uma vez
+  //   json: jest.fn().mockResolvedValue(joke1)
+  // })
   // inicio do processo do primeiro teste inicialização primeiro mock
   jest.spyOn(global, 'fetch');
   global.fetch.mockResolvedValueOnce({ // mockResolvedValueOnce vai garantir que esse mock seje utilizado apenas uma vez
